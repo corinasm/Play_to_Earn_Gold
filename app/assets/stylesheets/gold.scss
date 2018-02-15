@@ -1,0 +1,97 @@
+// Place all the styles related to the gold controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#container {
+    width: 925px;
+    color: #616161;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 0px auto;
+}
+h1 {
+    text-align: center;
+    color: #0b3cb7;
+    font-size: 38px;
+}
+#total {
+    text-align: center;
+    color: #b8860b;
+    font-size: 28px;
+}
+#gold{
+    color: #b8860b;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px #0b3cb7;
+    text-align: center;; 
+}
+#time {
+    color: #0b3cb7;
+    font-size: 14px;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+#gold-finder {
+    width: 160px;
+    height: 200px;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+    border: solid 2px #b8860b;
+    border-radius: 2px;  
+}
+.block-space {
+    margin-right: 31px; 
+}
+#earnings {
+    width: 97%;
+    border: solid 2px #b8860b;
+    padding: 10px;
+    margin: 0px auto; 
+}
+.button {
+    width: 110px;
+    height: 30px;
+    background-color:#0b3cb7;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    border-radius: 2px;
+    margin: 35px 0px 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #d99f0d;
+}
+.restart {
+    width: 110px;
+    height: 30px;
+    background-color:  #67b70b;
+    padding: 5px;
+    border: none;
+    font-size: 14px;
+    border-radius: 2px;
+    margin: 15px auto;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #67b70b; 
+}
+a { 
+   text-decoration: none;
+}
+a:visited { 
+    color: #0b3cb7;
+}
+.list {
+    line-height: 1.5em;
+}
+.green {
+    color: #67b70b;
+}
+.red {
+    color: #b7300b;
+}
+.grey {
+    color: #616161
+}    
+

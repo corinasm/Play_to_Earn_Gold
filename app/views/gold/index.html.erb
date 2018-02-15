@@ -1,0 +1,65 @@
+<div id="container"> 
+
+    <h1> Play to Earn Gold</h1>
+    <div id= "earnings">
+        <div id="total"> Your Total Gold </div>
+        <div id="gold"> <%= session[:total_gold] %> </div>
+        <button class="restart"><a href="reset">RESET</a></button>
+        
+        <div id="time"> <%= @t %> Pacific</div>
+    </div>
+    <div id="gold-finder" class="block-space"> 
+        <h2>Farm</h2> 
+        <p class="green">earns 10 - 20 golds<p>
+
+        <form action='/find_gold' method='post'>
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="hidden" name="location", value="farm">
+            <p><input type='submit' class="button" value='PLAY'></p>
+        </form>
+
+    </div>
+    <div id="gold-finder" class="block-space"> 
+        <h2>Cave</h2> 
+        <p class="green">earns 5 - 10 golds<p>
+
+        <form action='/find_gold' method='post'>
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="hidden" name="location" value="cave">
+            <p><input type='submit' class="button" value='PLAY'></p>
+        </form>
+
+    </div>
+    <div id="gold-finder" class="block-space"> 
+        <h2>House</h2> 
+        <p class="green">earns 2 - 5 golds<p>
+
+        <form action='/find_gold' method='post'>
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="hidden" name="location" value="house">
+            <p><input type='submit' class="button" value='PLAY'></p>
+        </form>
+
+    </div>
+    <div id="gold-finder"> 
+        <h2>Casino</h2>
+        <p class="green">earns/takes 0 - 50 golds<p>
+
+        <form action='/find_gold' method='post'>
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <input type="hidden" name="location" value="casino">
+            <p><input type='submit' class="button" value='PLAY'></p>
+        </form>
+
+    </div>
+
+    <div id="earnings">
+        <h3>EARNINGS LOG:</strong></h3>
+            <ul class="list" style="list-style-type:square">
+            <% session[:messages].each do |msg| %>
+                <li class="<%= msg['class'] %>"> <%= msg['text']%> </li>
+            <% end %>  
+         
+    </div>
+
+</div>
